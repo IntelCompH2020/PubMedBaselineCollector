@@ -884,7 +884,6 @@ fs          = [
 ]
 fs.sort(reverse=False)
 
-
 fc      = 0
 b_size  = 100
 actions = []
