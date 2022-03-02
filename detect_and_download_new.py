@@ -1,6 +1,6 @@
 __author__ = 'Dimitris Pappas'
 
-import os, json, gzip, traceback
+import os, gzip
 import urllib.request
 import argparse
 

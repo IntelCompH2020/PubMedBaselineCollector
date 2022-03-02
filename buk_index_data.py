@@ -7,12 +7,11 @@
 
 __author__ = 'Dimitris Pappas'
 
-import os, json, gzip, traceback
+import os, gzip, traceback
 from lxml import etree
 from pprint import pprint
 from tqdm import tqdm
 from dateutil import parser
-from zipfile import ZipFile
 from elasticsearch import Elasticsearch
 from elasticsearch.helpers import bulk
 import sys
