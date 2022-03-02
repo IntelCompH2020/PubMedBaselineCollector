@@ -865,6 +865,7 @@ es = Elasticsearch(
     retry_on_timeout=True
 )
 
+year        = '22'
 index       = 'pubmed_abstracts_0_1'
 doc_type    = 'abstract_map_0_1'
 
@@ -877,9 +878,9 @@ fs          = [
     if (
         f.endswith('.xml.gz')
         and
-        int(f.replace('pubmed22n','').replace('.xml.gz','')) >= gr_eq
+        int(f.replace('pubmed{}n'.format(year),'').replace('.xml.gz','')) >= gr_eq
         and
-        int(f.replace('pubmed22n','').replace('.xml.gz','')) <= l_eq
+        int(f.replace('pubmed{}n'.format(year),'').replace('.xml.gz','')) <= l_eq
     )
 ]
 fs.sort(reverse=False)
