@@ -1,3 +1,4 @@
+__author__ = 'Dimitris Pappas'
 
 import os, json, gzip, traceback
 import urllib.request
@@ -6,7 +7,7 @@ year        = '22'
 
 # base_url    = 'ftp://ftp.ncbi.nlm.nih.gov/pubmed/baseline/'
 base_url    = 'ftp://ftp.ncbi.nlm.nih.gov/pubmed/updatefiles/'
-diridiri    = '/media/dpappas/dpappas_data/PUBMED/pubmed_updates_20{}/ftp.ncbi.nlm.nih.gov/pubmed/updatefiles/'.format(year)
+diridiri    = './data/PUBMED/pubmed_updates_20{}/ftp.ncbi.nlm.nih.gov/pubmed/updatefiles/'.format(year)
 
 if not os.path.exists(diridiri):
     os.makedirs(diridiri)

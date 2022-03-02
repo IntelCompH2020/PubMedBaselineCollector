@@ -1,3 +1,4 @@
+__author__ = 'Dimitris Pappas'
 
 from elasticsearch import Elasticsearch
 

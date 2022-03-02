@@ -5,6 +5,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+__author__ = 'Dimitris Pappas'
+
 import os, json, gzip, traceback
 from lxml import etree
 from pprint import pprint
