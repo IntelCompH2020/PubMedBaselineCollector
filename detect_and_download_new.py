@@ -15,9 +15,6 @@ year                = str(args.year)[-2:]
 base_url            = args.base_url
 out_dir             = args.out_dir
 
-# base_url    = 'ftp://ftp.ncbi.nlm.nih.gov/pubmed/baseline/'
-# base_url    = 'ftp://ftp.ncbi.nlm.nih.gov/pubmed/updatefiles/'
-
 if not os.path.exists(out_dir):
     os.makedirs(out_dir)
 
@@ -44,6 +41,4 @@ with urllib.request.urlopen(base_url) as response:
                         command = 'wget {} -O {}'.format(file_url, opath)
                         print(command)
                         os.system(command)
-
-# python3.6 detect_and_download_new.py
 
